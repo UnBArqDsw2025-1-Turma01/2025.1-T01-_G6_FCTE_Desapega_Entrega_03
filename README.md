@@ -1,4 +1,4 @@
-# Desapega
+# FCTE Desapega
 
 ## Documentação
 
