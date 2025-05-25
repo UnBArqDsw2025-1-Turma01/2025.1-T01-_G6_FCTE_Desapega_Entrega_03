@@ -1,18 +1,8 @@
-# RepositorioTemplate
+# Desapega
 
-Repositório que deve ser utilizado como template inicial pelos grupos da matéria de Arquitetura e Desenho de Software.
+## Documentação
 
-## Introdução
-
-Este repositório traz um template de repo de documentação a ser seguido pelos grupos de arquitetura e desenho de software.
-
-## Tecnologia
-
-A geração do site estático é realizada utilizando o [docsify](https://docsify.js.org/).
-
-```shell
-"Docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. To start using it, all you need to do is create an index.html and deploy it on GitHub Pages."
-```
+A documentação do projeto é gerada utilizando o [docsify](https://docsify.js.org/).
 
 ### Instalando o docsify
 
@@ -22,10 +12,44 @@ Execute o comando:
 npm i docsify-cli -g
 ```
 
-### Executando localmente
+### Executando a documentação localmente
 
-Para iniciar o site localmente, utilize o comando:
+Para iniciar o site da documentação localmente, utilize o comando:
 
 ```shell
 docsify serve ./docs
 ```
+
+## Frontend
+
+O frontend do projeto foi desenvolvido utilizando React + Vite.
+
+### Instalando dependências
+
+Na pasta `frontend`, execute:
+
+```shell
+npm install
+```
+
+### Executando o frontend localmente
+
+Na pasta `frontend`, execute:
+
+```shell
+npm run dev
+```
+
+O frontend estará disponível em `http://localhost:5173`.
+
+### Storybook
+
+O Storybook é utilizado para documentação e desenvolvimento dos componentes.
+
+Para executar o Storybook, na pasta `frontend`, execute:
+
+```shell
+npm run storybook
+```
+
+O Storybook estará disponível em `http://localhost:6006`.
