@@ -1,20 +1,18 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout";
-import Home from "./pages/Home";
+import React from "react";
+import Layout from "./components/layout/index/"
 
-function App() {
-
+export default function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </>
-  )
+    <Layout>
+      {/* Frase grandona antes do carrossel */}
+      <section className="text-center py-16 bg-white">
+        <h1 className="text-5xl font-bold text-gray-800">
+          DESAPEGOS DA <span className="text-orange-500">UNB</span> <br /> EM UM SÓ LUGAR
+        </h1>
+        <h2 className="mt-4 text-xl font-light text-gray-500 tracking-wide">
+          <strong> A comunidade da UnB em movimento</strong>
+        </h2>
+      </section>
+    </Layout>
+  );
 }
-
-export default App

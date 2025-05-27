@@ -1,13 +1,15 @@
 import React from "react";
+import Navbar from "./navbar";
+import Footer from "./footer";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
     <div>
-      <header className="bg-gray-200 text-orange-500" >header</header>
-      <main>main</main>
-      <footer>footer</footer>
+      <Navbar />
+      <main>{children}</main>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default Layout;
