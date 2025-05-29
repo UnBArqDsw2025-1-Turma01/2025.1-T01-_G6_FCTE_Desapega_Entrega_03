@@ -1,6 +1,9 @@
 import React from "react";
 import CardLayout from "./layout";
 import reactLogo from "./../../assets/react.svg";
+import { MapPinIcon } from "@heroicons/react/24/solid";
+
+
 
 export default {
     title: "Card/Layout",
@@ -9,10 +12,6 @@ export default {
     argTypes: {
         title: {
         control: { type: "text" },
-        },
-        image: {
-            control: {type: false
-            },
         },
         price: {
             control: { type: "text" },
@@ -29,10 +28,12 @@ export default {
 
 export const Default = {
     args: {
-        title: "titulo",
+        title: "Guarda-chuva",
         price: "R$ 100,00",
-        image: reactLogo,
+        produtoImage: reactLogo,
         user: "Forest Gump",
+        icon: MapPinIcon,
+        userImage: reactLogo,
         local: "São Paulo, SP"
     },
 };
