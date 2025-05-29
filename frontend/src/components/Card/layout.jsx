@@ -8,20 +8,20 @@ const CardLayout = ({
     local
 }) => {
     return (
-        <div className="border-[1.5px] p-">
+        <div className="p-4 rounded-[20px]">
             <div className="">
-                {<img src={image}></img>}
+                <img src={image} alt="Imagem do bruto" className="w-full h-40" />
             </div>
-            <div className="font-medium w-fit font-medium text-[16px] text-secondary-500 ">
+            <div className="font-medium w-fit text-[16px] text-secondary-500 bg-orange-500">
                 {price}
             </div>
-            <div className="">
+            <div className="bg-blue-500">
                 {title} 
             </div>
-            <div>
+            <div className="bg-green-500">
                 {user}
             </div>
-            <div>
+            <div className="bg-yellow-500">
                 {local}
             </div>
         </div>
