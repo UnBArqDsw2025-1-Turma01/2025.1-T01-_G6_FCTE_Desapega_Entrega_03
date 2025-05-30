@@ -5,7 +5,6 @@ import UserPopover from "./components/Layout/UserPopover";
 export default function App() {
   return (
         <Layout>
-
       {/* Frase grandona antes do carrossel */}
       <section className="text-center py-16 bg-white">
         <h1 className="text-5xl font-bold text-gray-800">
