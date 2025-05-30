@@ -15,10 +15,25 @@ async function createUser(data) {
   return db.User.create(userData);
 }
 
+async function updateUserById(id, data) {
+  const [updatedRowsCount] = await db.User.update(data, {
+    where: { id }
+  });
+
+  if (updatedRowsCount === 0) {
+    throw new Error('User not found or no changes detected.');
+  }
+
+  const updatedUser = await findUserById(id);
+  return updatedUser;
+}
+
+
 module.exports = {
   findAllUsers,
   findUserById,
   createUser,
+  updateUserById,
 };
 
 
