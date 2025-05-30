@@ -1,4 +1,5 @@
 const db = require('../models');    
+const UserFactory = require('../factory/userFactory');
 
 async function findAllUsers() {
   return db.User.findAll();         
@@ -9,7 +10,9 @@ async function findUserById(id) {
 }
 
 async function createUser(data) {
-  return db.User.create(data);
+  const userInstance = UserFactory.createUser(data);
+  const userData = userInstance.toDbObject();
+  return db.User.create(userData);
 }
 
 module.exports = {
@@ -17,3 +20,7 @@ module.exports = {
   findUserById,
   createUser,
 };
+
+
+
+
