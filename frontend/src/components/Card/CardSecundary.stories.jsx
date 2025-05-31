@@ -1,13 +1,13 @@
 import React from "react";
-import CardLayout from "./layout";
+import CardSecundary from "./CardSecundary";
 import reactLogo from "./../../assets/react.svg";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 
 
 
 export default {
-    title: "Card/Layout",
-    component: CardLayout,
+    title: "Card/CardSecundary",
+    component: CardSecundary,
     tags: ["autodocs"],
     argTypes: {
         title: {

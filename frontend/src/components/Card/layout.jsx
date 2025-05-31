@@ -1,7 +1,7 @@
 import React from "react";
 
 const CardLayout = ({
-    produtoImage,
+    productImage,
     price,
     title,
     user,
@@ -12,7 +12,7 @@ const CardLayout = ({
     return (
         <div className="p-4 rounded-[20px] w-fit min-w-[286px] min-h-[400px] font-inter">
             <div className="">
-                <img src={produtoImage} alt="Imagem do bruto" className="w-full h-40  rounded-[20px]" />
+                <img src={productImage} alt="Imagem do bruto" className="w-full h-40  rounded-[20px]" />
             </div>
             <div className="pt-[15px] font-bold text-[20px] w-fit text-secondary-500  ">
                 {price}
