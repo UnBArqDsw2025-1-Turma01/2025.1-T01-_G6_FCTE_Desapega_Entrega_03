@@ -15,7 +15,7 @@ const CardSecundary = ({
 
 }) => {
   return (
-        <CardLayout {...props} className="bg-red-100"
+        <CardLayout {...props}
           productImage={TemplateProduct}
           price={false}
           title={title}

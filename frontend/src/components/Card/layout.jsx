@@ -1,14 +1,14 @@
 import React from "react";
-import Button from "../Layout/button";
+import { MapPinIcon } from "@heroicons/react/24/solid";
 
 const CardLayout = ({
     productImage,
-    price,
-    title,
-    user,
+    price = "R$ 100,00",
+    title = "Guarda Chuva",
+    user = "João da Silva",
     userImage,
-    icon: Icon,
-    local,
+    icon: Icon = MapPinIcon,    
+    local = "São Paulo, SP",
     children,
     ...props
 }) => {
@@ -36,8 +36,11 @@ const CardLayout = ({
             </div>
             <div className="flex justify-start">
                 <div className="m-0 p-0 flex items-center ">
-                    <Icon className="block leading-none h-5 w-5 text-orange-600 mr-[5px] p-0 m-0 " />
-
+                    {Icon && (
+                        <div className="m-0 p-0 flex items-center ">
+                            <Icon className="block leading-none h-5 w-5 text-orange-600 mr-[5px] p-0 m-0" />
+                        </div>
+                        )}
                 </div>
                 <div className="font-medium text-[14px] text-gray-800 w-fit">
                     {local}
