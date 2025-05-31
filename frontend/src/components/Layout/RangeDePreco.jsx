@@ -14,7 +14,7 @@ const RangeDePreco = ({ onRangeChange }) => {
 
   const calcularPosicoes = () => {
     const trackWidth = trackRef.current.offsetWidth;
-    const thumbWidth = 18; // largura do thumb em px
+    const thumbWidth = 18; 
     const usableTrackWidth = trackWidth - thumbWidth;
 
     const percentMin = min / 200;
@@ -62,7 +62,6 @@ const RangeDePreco = ({ onRangeChange }) => {
           onChange={handleMaxChange}
         />
 
-        {/* Faixa laranja entre os thumbs */}
         <div
           className="range-highlight"
           style={{
@@ -71,7 +70,6 @@ const RangeDePreco = ({ onRangeChange }) => {
           }}
         />
 
-        {/* Labels sobre os thumbs */}
         <div className="preco-label" style={{ left: `${minPos + 18 / 2}px` }}>
           R${min}
         </div>
