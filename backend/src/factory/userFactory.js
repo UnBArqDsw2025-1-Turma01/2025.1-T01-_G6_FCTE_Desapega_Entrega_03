@@ -1,3 +1,5 @@
+const bcrypt = require('bcrypt');
+
 class AdminUser {
   constructor(data) {
     this.name = data.name;
@@ -16,7 +18,7 @@ class AdminUser {
       name: this.name,
       email: this.email,
       phone: this.phone,
-      password: this.password,
+      password: bcrypt.hashSync(this.password, 10),
       role: this.role
     };
   }
@@ -40,7 +42,7 @@ class RegularUser {
       name: this.name,
       email: this.email,
       phone: this.phone,
-      password: this.password,
+      password: bcrypt.hashSync(this.password, 10),
       role: this.role
     };
   }
