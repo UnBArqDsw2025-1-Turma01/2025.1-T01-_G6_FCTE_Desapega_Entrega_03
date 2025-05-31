@@ -7,10 +7,12 @@ const CardLayout = ({
     user,
     userImage,
     icon: Icon,
-    local
+    local,
+    children,
+    ...props
 }) => {
     return (
-        <div className="p-4 rounded-[20px] w-fit min-w-[286px] min-h-[400px] font-inter">
+        <div {...props} className="p-4 rounded-[20px] w-fit min-w-[286px] min-h-[400px] font-inter">
             <div className="">
                 <img src={productImage} alt="Imagem do bruto" className="w-full h-40  rounded-[20px]" />
             </div>
@@ -42,6 +44,7 @@ const CardLayout = ({
             <div className="flex justify-center pt-[20px]">
                 <p>Botao vai ficar aqui</p>
             </div>
+            {children}
         </div>
     )
 }

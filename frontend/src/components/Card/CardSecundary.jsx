@@ -8,10 +8,12 @@ const CardSecundary = ({
   user,
   userImage,
   icon,
-  local
+  local,
+  ...props
+
 }) => {
   return (
-        <CardLayout
+        <CardLayout {...props} className="bg-red-100"
           productImage={productImage}
           price={price}
           title={title}
@@ -19,7 +21,7 @@ const CardSecundary = ({
           userImage={userImage}
           icon={icon}
           local={local}
-        >
+        > 
         </CardLayout>
 
   );

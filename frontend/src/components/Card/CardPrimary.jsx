@@ -8,10 +8,11 @@ const CardPrimary = ({
   user,
   userImage,
   icon,
-  local
+  local,
+  ...props
 }) => {
   return (
-        <CardLayout
+        <CardLayout {...props}
           productImage={productImage}
           price={price}
           title={title}
@@ -19,7 +20,7 @@ const CardPrimary = ({
           userImage={userImage}
           icon={icon}
           local={local}
-        > <div className="flex justify-center pt-[20px]">BOTAO VAI AQUIRRRRR</div>
+        > 
         </CardLayout>
 
   );

@@ -8,10 +8,11 @@ const CardTerciary = ({
   user,
   userImage,
   icon,
-  local
+  local,
+  ...props
 }) => {
   return (
-        <CardLayout
+        <CardLayout {...props}
           productImage={productImage}
           price={price}
           title={title}
