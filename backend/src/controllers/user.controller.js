@@ -1,4 +1,5 @@
 const userService = require('../services/user.service');
+const userFacade = require('../facades/user.facade')
 
 async function getUsers(req, res, next) {
   try {
@@ -28,8 +29,22 @@ async function postUser(req, res, next) {
   }
 }
 
+async function updateUser(req, res, next) 
+{
+  try
+  {
+    const user = await userFacade.updateUser(req.params, req.body);
+    res.status(200).json(user);
+  }
+  catch (err)
+  {
+    res.status(500).json({ error: err.message });
+  }
+}
+
 module.exports = {
   getUsers,
   getUser,
   postUser,
+  updateUser,
 };

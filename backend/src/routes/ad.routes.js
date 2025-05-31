@@ -7,5 +7,6 @@ const router = Router();
 
 router.get('/', adController.getAds);
 router.post('/', adController.postAd);
+router.get('/:id', adController.getAdById);
 
 module.exports = router;
