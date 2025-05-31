@@ -14,34 +14,68 @@ const RangeDePreco = ({ onRangeChange }) => {
 
   const calcularPosicoes = () => {
     const trackWidth = trackRef.current.offsetWidth;
+    const thumbWidth = 18; // largura do thumb em px
+    const usableTrackWidth = trackWidth - thumbWidth;
+
     const percentMin = min / 200;
     const percentMax = max / 200;
-    setMinPos(trackWidth * percentMin);
-    setMaxPos(trackWidth * percentMax);
+
+    const minPixel = usableTrackWidth * percentMin;
+    const maxPixel = usableTrackWidth * percentMax;
+
+    setMinPos(minPixel);
+    setMaxPos(maxPixel);
   };
 
   const handleMinChange = (e) => {
     const novoMin = parseInt(e.target.value);
-    setMin(novoMin);
-    onRangeChange(novoMin, max);
+    if (novoMin <= max) {
+      setMin(novoMin);
+      onRangeChange(novoMin, max);
+    }
   };
 
   const handleMaxChange = (e) => {
     const novoMax = parseInt(e.target.value);
-    setMax(novoMax);
-    onRangeChange(min, novoMax);
+    if (novoMax >= min) {
+      setMax(novoMax);
+      onRangeChange(min, novoMax);
+    }
   };
 
   return (
     <div className="range-container">
       <h3>Preço</h3>
       <div className="sliders" ref={trackRef}>
-        <input type="range" min="0" max="200" value={min} onChange={handleMinChange} />
-        <input type="range" min="0" max="200" value={max} onChange={handleMaxChange} />
-        <div className="preco-label" style={{ left: `${minPos}px` }}>
+        <input
+          type="range"
+          min="0"
+          max="200"
+          value={min}
+          onChange={handleMinChange}
+        />
+        <input
+          type="range"
+          min="0"
+          max="200"
+          value={max}
+          onChange={handleMaxChange}
+        />
+
+        {/* Faixa laranja entre os thumbs */}
+        <div
+          className="range-highlight"
+          style={{
+            left: `${minPos + 18 / 2}px`,
+            width: `${maxPos - minPos}px`,
+          }}
+        />
+
+        {/* Labels sobre os thumbs */}
+        <div className="preco-label" style={{ left: `${minPos + 18 / 2}px` }}>
           R${min}
         </div>
-        <div className="preco-label" style={{ left: `${maxPos}px` }}>
+        <div className="preco-label" style={{ left: `${maxPos + 18 / 2}px` }}>
           R${max}
         </div>
       </div>
@@ -50,4 +84,3 @@ const RangeDePreco = ({ onRangeChange }) => {
 };
 
 export default RangeDePreco;
-
