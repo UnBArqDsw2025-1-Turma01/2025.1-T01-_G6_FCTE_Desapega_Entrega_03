@@ -1,6 +1,7 @@
 import React from "react";
 import CardTerciary from "./CardTerciary";
-import reactLogo from "./../../assets/react.svg";
+import TemplateProduct from "./../../assets/template_produto.png";
+import TemplateUser from "./../../assets/template_user.png";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 
 
@@ -30,10 +31,10 @@ export const Default = {
     args: {
         title: "Guarda-chuva",
         price: "R$ 100,00",
-        productImage: reactLogo,
+        productImage: TemplateProduct,
         user: "Forest Gump",
         icon: MapPinIcon,
-        userImage: reactLogo,
+        userImage: TemplateUser,
         local: "São Paulo, SP"
     },
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Layout/button";
 
 const CardLayout = ({
     productImage,
@@ -16,9 +17,10 @@ const CardLayout = ({
             <div className="">
                 <img src={productImage} alt="Imagem do bruto" className="w-full h-40  rounded-[20px]" />
             </div>
-            <div className="pt-[15px] font-bold text-[20px] w-fit text-secondary-500  ">
-                {price}
+            <div className={`pt-[15px] font-bold text-[20px] w-fit text-secondary-500 ${!price ? 'invisible' : ''}`}>
+            {price || 'R$ 100,00'}
             </div>
+
             <div className="flex justify-between items-center pt-[10px] pb-[20px]">
                 <div>
                     <div className=" font-extrabold text-[16px] text-gray-800 w-fit">
@@ -40,9 +42,6 @@ const CardLayout = ({
                 <div className="font-medium text-[14px] text-gray-800 w-fit">
                     {local}
                 </div>
-            </div>
-            <div className="flex justify-center pt-[20px]">
-                <p>Botao vai ficar aqui</p>
             </div>
             {children}
         </div>

@@ -33,3 +33,5 @@ Button.propTypes = {
   type: PropTypes.oneOf(["button", "submit", "reset"]),
   className: PropTypes.string,
 };
+
+export default Button;
