@@ -1,5 +1,5 @@
-const ValidateUserExists = require('./validateUserExists');
-const ValidateAdType = require('./validateAdType');
+const ValidateUserExists = require('./validaterUserReal');
+const ValidateAdType = require('./validateType');
 const ValidateAdLimit = require('./validateAdLimit');
 
 const userCheck = new ValidateUserExists();
