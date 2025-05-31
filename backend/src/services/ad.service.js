@@ -1,15 +1,9 @@
 const db = require('../models');
 
 async function findAllAds() {
-    return db.Ad.findAll();
-}
-
-async function createAd(data) {
-    return db.Ad.create(data);
+  return db.Ad.findAll();
 }
 
 module.exports = {
-    findAllAds,
-    createAd,
+  findAllAds,
 };
-

@@ -24,10 +24,10 @@ module.exports = {
         type: Sequelize.ENUM('sale', 'donation', 'exchange'),
         allowNull: false,
       },
-      status: {
+      isActive: { // <-- alterado para manter consistência com o model
         type: Sequelize.BOOLEAN,
         allowNull: false,
-        defaultValue: true, // assume que o anúncio começa ativo
+        defaultValue: true,
       },
       userId: {
         type: Sequelize.UUID,

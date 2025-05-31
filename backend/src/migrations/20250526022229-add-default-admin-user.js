@@ -12,6 +12,7 @@ module.exports = {
       name:       'Admin',
       email:      'admin@desapega.com',
       password:   passwordHash,
+      phone: '+55 11 91234-5678',
       createdAt:  new Date(),    
       updatedAt:  new Date()    
     }], {});
