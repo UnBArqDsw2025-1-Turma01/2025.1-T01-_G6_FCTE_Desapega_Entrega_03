@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "./components/layout/index/";
-import UserPopover from "./components/Layout/UserPopover";
+import UserPopover from "./components/Popover";
 import { DropdownBuilder } from "./components/Layout/DropdownBuilder";
 
 export default function App() {

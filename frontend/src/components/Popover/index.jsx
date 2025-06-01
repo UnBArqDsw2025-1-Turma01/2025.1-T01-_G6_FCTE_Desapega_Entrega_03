@@ -1,7 +1,7 @@
 import * as Popover from "@radix-ui/react-popover";
 import {PersonIcon,PlusCircledIcon,BookmarkIcon,ExitIcon,ChevronDownIcon,
 } from "@radix-ui/react-icons";
-import { Button } from "../Layout/button"; // ajuste o caminho conforme seu projeto
+import { Button } from "../Button"; // caminho atualizado
 
 // ----------- Decorator (função que adiciona destaque ao componente) -----------
 const withHighlight = (WrappedComponent) => {
