@@ -12,18 +12,9 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "@heroicons/react": "^2.2.0",
-=======
-    "@radix-ui/react-icons": "^1.3.2",
-    "@radix-ui/react-popover": "^1.1.14",
->>>>>>> main
-=======
     "@heroicons/react": "^2.2.0",
     "@radix-ui/react-icons": "^1.3.2",
     "@radix-ui/react-popover": "^1.1.14",
->>>>>>> 71a8c24b611a2935afb2f39f5d73b658a158ab15
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.1"
