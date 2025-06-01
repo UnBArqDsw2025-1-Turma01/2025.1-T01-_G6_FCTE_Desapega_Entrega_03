@@ -1,5 +1,5 @@
 import React from "react";
-import CardLayout from "./layout";
+import CardSecundary from "./CardSecundary";
 import TemplateProduct from "./../../assets/template_produto.png";
 import TemplateUser from "./../../assets/template_user.png";
 import { MapPinIcon } from "@heroicons/react/24/solid";
@@ -7,8 +7,8 @@ import { MapPinIcon } from "@heroicons/react/24/solid";
 
 
 export default {
-    title: "Card/Layout",
-    component: CardLayout,
+    title: "Card/CardSecundary",
+    component: CardSecundary,
     tags: ["autodocs"],
     argTypes: {
         title: {
