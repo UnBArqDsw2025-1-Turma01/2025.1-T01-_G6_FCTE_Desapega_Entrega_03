@@ -10,5 +10,6 @@ router.get('/:type', adController.getAdsByType);
 router.post('/', adController.postAd);
 router.patch('/:id', adController.updateAd);
 router.delete('/:id', adController.deleteAdById);
+router.get('/:id', adController.getAdById);
 
 module.exports = router;

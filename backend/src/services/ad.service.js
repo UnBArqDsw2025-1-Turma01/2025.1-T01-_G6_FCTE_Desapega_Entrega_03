@@ -4,8 +4,7 @@ async function findAllAds() {
   return await db.Ad.findAll();
 }
 
-async function findAdById(id)
-{
+async function findAdById(id){
   return await db.Ad.findByPk(id);
 }
 
@@ -51,9 +50,12 @@ async function deleteAdById(id)
   return db.Ad.destroy({where: {id}});
 }
 
+
+
 module.exports = {
   findAllAds,
+  findAdById,  
   getAdsByType,
   deleteAdById,
-  updateAd
+  updateAd,
 };

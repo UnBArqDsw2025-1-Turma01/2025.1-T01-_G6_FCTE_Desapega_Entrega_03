@@ -81,8 +81,22 @@ async function deleteAdById(req, res, next)
   }
 }
 
+async function getAdById(req, res, next) {
+  try {
+    const { id } = req.params;
+    const ad = await adService.findAdById(id);
+    if (!ad) {
+      return res.status(404).json({ message: 'Anúncio não encontrado.' });
+    }
+    res.json(ad);
+  } catch (err) {
+    next(err);
+  }
+}
+
 module.exports = {
   getAds,
+  getAdById,
   postAd,
   getAdsByType,
   deleteAdById,
