@@ -7,12 +7,14 @@ class AuthService {
 
     static getInstance() {
         if (!AuthService.instance) {
-        AuthService.instance = new AuthService();
+            AuthService.instance = new AuthService();
         }
         return AuthService.instance;
     }
 
-    
+    async login(strategy, credentials) {
+        return strategy.authenticate(credentials);
+    }
 }
 
 module.exports = AuthService;
