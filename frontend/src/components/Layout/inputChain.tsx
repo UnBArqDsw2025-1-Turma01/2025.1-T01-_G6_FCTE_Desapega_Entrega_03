@@ -1,4 +1,3 @@
-// Definindo interfaces para TypeScript
 interface IValidator {
   setNext(next: IValidator): IValidator;
   validate(value: string): string | null;
