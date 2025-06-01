@@ -59,7 +59,6 @@ export default function CustomInput() {
         {hasError ? "Texto de suporte" : "Texto de suporte"}
       </p>
 
-      {/* Controles para simular os estados */}
       <div className="flex gap-2 mt-4">
         {Object.entries(estados).map(([key, val]) => (
           <button
