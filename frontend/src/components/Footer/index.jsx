@@ -3,7 +3,7 @@ import Logo from "../../assets/Logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#075985] text-white px-8 py-6">
+    <footer className="bg-primary-800 text-white px-8 py-6">
       <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between max-w-7xl mx-auto">
         {/* Logo e texto abaixo */}
         <div className="flex flex-col">
