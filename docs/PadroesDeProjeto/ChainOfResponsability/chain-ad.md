@@ -17,7 +17,7 @@ O Chain of Responsibility (ou Cadeia de Responsabilidade) é um padrão de desig
 
 Em nosso projeto, a classe `Anúncio` possui 3 classes filhas, podendo ser anúncios de doação, venda ou troca. Ao criar esse registro no banco de dados de forma organizada ao lidar com uma requisição, o padrão Chain of Responsability permite organizar e desacoplar as diversas etapas de validação exigidas antes da criação de um anúncio. Cada validação — verificar se o usuário existe, checar o tipo do anúncio e garantir que o limite de anúncios ativos não foi ultrapassado — possui uma lógica específica e independente, mas que deve ser executada de forma sequencial e ordenada. Utilizando esse padrão, é possível encapsular cada validação em uma classe separada, promovendo a responsabilidade única e facilitando a manutenção e extensibilidade do sistema.
 
-## Implementação do padrão no Proejto
+## Implementação do padrão no Projeto
 
 ![Padrão do Chain of Resposability no projeto](../../assets/diagrama-chain.jpg)
 
