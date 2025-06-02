@@ -12,6 +12,7 @@ module.exports = {
       email:      { type: Sequelize.STRING, allowNull: false, unique: true },
       password:   { type: Sequelize.STRING, allowNull: false },
       phone:      { type: Sequelize.STRING, allowNull: false },
+      role:       { type: Sequelize.STRING, allowNull: false, defaultValue: 'user' },
       createdAt:  { type: Sequelize.DATE,   defaultValue: Sequelize.NOW },
       updatedAt:  { type: Sequelize.DATE,   defaultValue: Sequelize.NOW },
     });

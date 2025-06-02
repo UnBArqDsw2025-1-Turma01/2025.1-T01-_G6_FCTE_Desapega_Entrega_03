@@ -28,12 +28,17 @@ async function updateUserById(id, data) {
   return updatedUser;
 }
 
+async function deleteUserById(id) {
+  return db.User.destroy({ where: { id } });
+}
+
 
 module.exports = {
   findAllUsers,
   findUserById,
   createUser,
   updateUserById,
+  deleteUserById,
 };
 
 

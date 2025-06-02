@@ -9,6 +9,14 @@ module.exports = (sequelize, DataTypes) => {
     email:    { type: DataTypes.STRING, allowNull: false, unique: true },
     password: { type: DataTypes.STRING, allowNull: false },
     phone:    { type: DataTypes.STRING, allowNull: false},
+    role: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      defaultValue: 'user',
+      validate: {
+        isIn: [['admin', 'user']]
+      }
+    }
   }, {
     tableName:   'Users',    
     underscored: false,

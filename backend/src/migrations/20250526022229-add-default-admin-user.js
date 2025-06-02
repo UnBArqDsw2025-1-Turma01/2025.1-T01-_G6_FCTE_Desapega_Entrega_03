@@ -10,9 +10,10 @@ module.exports = {
     await queryInterface.bulkInsert('Users', [{
       id:         uuidv4(),
       name:       'Admin',
-      email:      'admin@desapega.com',
+      email:      'admin@unb.br',
       password:   passwordHash,
       phone: '+55 11 91234-5678',
+      role: 'admin',
       createdAt:  new Date(),    
       updatedAt:  new Date()    
     }], {});
@@ -20,7 +21,7 @@ module.exports = {
 
   down: async (queryInterface, Sequelize) => {
     await queryInterface.bulkDelete('Users', {
-      email: 'admin@desapega.com'
+      email: 'admin@unb.br'
     }, {});
   }
 };
