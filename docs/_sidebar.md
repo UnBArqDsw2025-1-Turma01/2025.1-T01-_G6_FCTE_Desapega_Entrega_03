@@ -13,6 +13,7 @@
     - [3.3. Padrões de Projeto GoFs Comportamentais](/PadroesDeProjeto/3.3.GoFsComportamentais.md)
       - [3.3.1. Estrategy](/PadroesDeProjeto/Strategy/cardStrategy.md)
         - [3.3.1.1 Cards](/PadroesDeProjeto/Strategy/cardStrategy.md)
+        - [3.3.1.1.2. Range ](/PadroesDeProjeto/Strategy/RangeStrategy.md)
     - [3.4. Participações - Padrões de Projeto](/docs/PadroesDeProjeto/3.4.ParticipacoesPadroes.md)
     - [3.5. Iniciativas Extras - Padrões de Projeto](/docs/PadroesDeProjeto/3.5.IniciativasExtras.md)
       
