@@ -15,7 +15,7 @@ O Chain of Responsibility (ou Cadeia de Responsabilidade) é um padrão de desig
 
 ## Porque eu decidi usar o Chain of Responsability?
 
-Em nosso projeto, a classe `Anúncio` possui 3 classes filhas, podendo ser anúncios de doação, venda ou troca. Ao criar esse registro no banco de dados de forma organizada ao lidar com uma requisição, o padrão Chain of Responsability permite organizar e desacoplar as diversas etapas de validação exigidas antes da criação de um anúncio. Cada validação — verificar se o usuário existe, checar o tipo do anúncio e garantir que o limite de anúncios ativos não foi ultrapassado — possui uma lógica específica e independente, mas que deve ser executada de forma sequencial e ordenada. Utilizando esse padrão, é possível encapsular cada validação em uma classe separada, promovendo a responsabilidade única e facilitando a manutenção e extensibilidade do sistema.
+Em nosso projeto, a classe `Anúncio` possui 3 classes filhas, podendo ser anúncios de doação, venda ou troca. Ao criar esse registro no banco de dados de forma organizada ao lidar com uma requisição, o padrão Chain of Responsability permite organizar e desacoplar as diversas etapas de validação exigidas antes da criação de um anúncio. Cada validação — verificar se o usuário existe, checar o tipo do anúncio e garantir que o limite de anúncios ativos não foi ultrapassado — possui uma lógica específica e independente, mas que deve ser executada de forma sequencial e ordenada. Utilizando esse padrão, é possível encapsular cada validação em uma classe separada, promovendo a responsabilidade única e facilitando a manutenção e extensibilidade do sistema. Além disso é esperado que num projeto real o escopo se aumentado, possa oferecer mais etapas na cadeia de responsabilidade. 
 
 ## Implementação do padrão no Projeto
 
@@ -201,4 +201,22 @@ async function postAd(req, res, next) {
             <td>Foi revisado o diagrama de classes da dupla que faço parte, seu posicionamento no documento e se era possível acessa-lo</td>
         </tr>
     </table>
-</div>
+</div>jagaima@jagaima:~/2025.1-T01-_G6_FCTE_Desapega_Entrega_03$ git stash pop
+Mesclagem automática de docs/PadroesDeProjeto/ChainOfResponsability/chain-ad.md
+No ramo doc-davi-arthur-gofs
+Your branch is up to date with 'upstream/doc-davi-arthur-gofs'.
+
+Changes not staged for commit:
+  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   docs/PadroesDeProjeto/ChainOfResponsability/chain-ad.md
+        modified:   docs/_sidebar.md
+
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+        docs/PadroesDeProjeto/Factory/
+        docs/assets/factory1b.png
+        docs/assets/factory2.png
+
+nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
+Dropped refs/stash@{0} (0896c61bd56fa2405f6c4fab223a8abe0f151bdb)
