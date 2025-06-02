@@ -10,7 +10,7 @@ const variants = {
 const Button = forwardRef(
   ({ children, variant = "primary", type = "button", className = "", disabled = false, ...props }, ref) => {
     const baseClasses =
-      "px-4 py-2 rounded-full focus:outline-none font-bold capitalize";
+      "px-4 py-2 rounded-full focus:outline-none font-bold capitalize border-none";
 
     const variantClasses = variants[variant] || variants.primary;
 
