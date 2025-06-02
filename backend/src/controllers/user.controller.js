@@ -5,7 +5,6 @@ const emailUnbStrategy = require('../strategy/emailUnbLogin.strategy');
 const getAuthService = require('../services/auth.service'); 
 const UserFactory = require('../factory/userFactory'); 
 
-
 async function getUsers(req, res, next) {
   try {
     const users = await userService.findAllUsers();
@@ -38,25 +37,12 @@ async function updateUser(req, res, next)
 {
   try
   {
-    const { id } = req.params;
-    const update_user_params = req.body;
-
-    if (!id) {
-      return res.status(400).send({ message: 'Por favor, forneça um ID.' });
-    }
-
-    if (!update_user_params || Object.keys(update_user_params).length === 0) {
-      return res.status(400).send({ message: 'Nenhum dado para atualizar foi fornecido.' });
-    }
-
-    const user = await userService.updateUserById(id, update_user_params);
-
-    return res.status(200).send(user);
+    const user = await userFacade.updateUser(req.params, req.body);
+    res.status(200).json(user);
   }
   catch (err)
   {
-    console.error(err);
-    return res.status(500).send({ message: 'Erro ao atualizar usuário.', error: err.message });
+    res.status(500).json({ error: err.message });
   }
 }
 
