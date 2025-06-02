@@ -1,5 +1,5 @@
 import React from "react";
-import CardFactory from "../factories/CardFactory";
+import { useCardStrategy } from "../strategies/cardStrategies";
 
 // Array de anúncios de exemplo com diferentes tipos (venda, troca, doação)
 const anunciosData = [
@@ -81,16 +81,24 @@ const anunciosData = [
 ];
 
 const AnunciosList = () => {
+    // Usa o hook personalizado que implementa o padrão Strategy
+    const { renderCard } = useCardStrategy();
+    
+    // Função que renderiza um card para um anúncio específico
+    const renderAnuncioCard = (anuncio) => {
+        return renderCard(anuncio.type, {
+            title: anuncio.title,
+            price: anuncio.price,
+            user: anuncio.user,
+            local: anuncio.local
+        });
+    };
+
     return (
         <section className="w-full grid grid-cols-3 gap-4 border-l border-primary-800 pl-4">
             {anunciosData.map((anuncio) => (
                 <div key={anuncio.id} className="mb-4">
-                    {CardFactory.create(anuncio.type, {
-                        title: anuncio.title,
-                        price: anuncio.price,
-                        user: anuncio.user,
-                        local: anuncio.local
-                    })}
+                    {renderAnuncioCard(anuncio)}
                 </div>
             ))}
         </section>

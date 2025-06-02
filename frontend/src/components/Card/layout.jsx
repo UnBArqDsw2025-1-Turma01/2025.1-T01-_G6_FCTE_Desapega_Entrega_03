@@ -13,7 +13,7 @@ const CardLayout = ({
     ...props
 }) => {
     return (
-        <div {...props} className="p-4 rounded-[20px] min-w-full min-h-[400px] border flex flex-col justify-between">
+        <div {...props} className="p-4 rounded-[20px] min-w-full min-h-[400px] flex flex-col justify-between">
             <img src={productImage} alt="Imagem do bruto" className="w-full h-32  rounded-[20px]" />
             <p className={`pt-[15px] font-bold text-[20px] w-fit text-secondary-500 ${!price ? 'invisible' : ''}`}>
             {price || 'R$ 100,00'}
