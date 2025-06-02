@@ -1,4 +1,4 @@
-# Cards
+# Componente Card de Anúncios
 
 ## Introdução
 
