@@ -84,13 +84,13 @@ async function deleteAdById(req, res, next)
 async function getAdById(req, res, next) {
   try {
     const { id } = req.params;
-    const ad = await adService.findAdById(id);
+    const ad = await adService.findAdById(req.params.id);
     if (!ad) {
       return res.status(404).json({ message: 'Anúncio não encontrado.' });
     }
-    res.json(ad);
+    res.status(200).send(ad);
   } catch (err) {
-    next(err);
+    res.status(500).send({message: '❌ Erro ao deletar anúncio', error: err.message});
   }
 }
 
