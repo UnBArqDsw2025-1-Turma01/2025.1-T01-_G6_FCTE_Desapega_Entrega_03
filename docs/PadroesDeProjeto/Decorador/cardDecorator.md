@@ -91,7 +91,14 @@ const UserPopover = () => {
 
 Este resumo descreve como o padrão de projeto **Decorator** foi aplicado em uma interface React para adicionar estilos visuais de forma dinâmica e reutilizável.
 
+### 🔹 Componentes e Funções
 
+| Parte                      | Função                                                                 |
+|----------------------------|------------------------------------------------------------------------|
+| PopoverItem              | Componente básico, responsável por renderizar um item de menu com ícone e texto. Não possui destaque visual. |
+| withHighlight            | Função decoradora que adiciona realce visual condicional (bg-yellow-100, font-semibold) a qualquer componente passado. |
+| HighlightedPopoverItem   | Resultado da aplicação de withHighlight sobre PopoverItem. Permite destacar visualmente um item com base na prop isHighlighted. |
+| UserPopover              | Componente principal que utiliza os itens decorados e não decorados para construir um menu suspenso com opções. |
 
 ## Referências Bibliográficas
 
