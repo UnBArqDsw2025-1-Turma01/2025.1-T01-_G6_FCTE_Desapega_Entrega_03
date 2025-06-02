@@ -32,7 +32,6 @@ const RangeDePreco = ({ onRangeChange, strategy }) => {
 
   return (
     <div className="range-container">
-      <h3>Preço</h3>
       <div className="sliders" ref={trackRef}>
         <div className="track-background"></div>
 
@@ -70,7 +69,6 @@ const RangeDePreco = ({ onRangeChange, strategy }) => {
       <style>{`
         .range-container {
           width: 300px;
-          margin: 40px auto;
           font-family: sans-serif;
           color: #075985;
         }

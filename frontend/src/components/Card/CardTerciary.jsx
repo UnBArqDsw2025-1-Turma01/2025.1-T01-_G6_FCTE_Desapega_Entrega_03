@@ -3,6 +3,7 @@ import CardLayout from "./layout";
 import TemplateProduct from "./../../assets/template_produto.png";
 import TemplateUser from "./../../assets/template_user.png";
 import Button from "../Button/index";
+
 const CardTerciary = ({
   productImage,
   price,
@@ -24,7 +25,7 @@ const CardTerciary = ({
           local={local}
         >
           <div className="flex justify-center pt-[20px]">
-            <Button variant="primary" className="w-full bg-primary-500 border hover:bg-primary-600">
+            <Button variant="primary" className="w-full bg-secondary-800 border hover:bg-secondary-900">
                 Doar
             </Button>
           </div>

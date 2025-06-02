@@ -3,12 +3,13 @@ import BadgeLayout from "./layout";
 
 const BadgeSecondary = ({
     text,
-    icon: Icon
+    icon: Icon,
+    onClick
 }) => {
 
     return  (
-        <BadgeLayout>
-            <div className="px-[14px] py-2 bg-secondary-500 flex gap-2.5 itens-center items-center">
+        <BadgeLayout onClick={onClick}>
+            <div className="px-3 py-1 bg-secondary-500 flex gap-2.5 itens-center items-center">
                 <div className=" text-white">
                     {text}
                 </div>
