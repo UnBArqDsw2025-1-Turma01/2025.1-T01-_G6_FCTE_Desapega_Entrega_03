@@ -1,5 +1,15 @@
 import React from "react";
 import BadgePrimary from "../../../components/Badge/BadgePrimary";
+import RangeDePreco from "../../../components/Range/RangeDePreco";
+
+// Estratégia de cálculo para o componente RangeDePreco
+const rangeStrategy = {
+  calculate: (min, max, trackWidth) => {
+    const minPos = (min / 200) * trackWidth;
+    const maxPos = (max / 200) * trackWidth;
+    return { minPos, maxPos };
+  }
+};
 
 const categories = [
   "Eletrônicos",
@@ -24,7 +34,7 @@ const location = [
 
 const Sidebar = () => {
   return (
-    <section className="w-1/3 border-r border-primary-800 flex flex-col gap-8">
+    <section className="w-1/3  flex flex-col gap-8">
       <div className="w-full flex flex-col gap-2.5">
         <h3 className="text-lg text-primary-800 font-semibold">Categorias</h3>
         <div className="flex flex-row gap-2 flex-wrap w-full">
@@ -51,6 +61,17 @@ const Sidebar = () => {
           ))}
         </div>
       </div>
+
+      <div className="w-full flex flex-col gap-2.5">
+        <h3 className="text-lg text-primary-800 font-semibold">Preço</h3>
+        <div className="flex flex-row gap-2 flex-wrap w-full">
+          <RangeDePreco 
+            strategy={rangeStrategy} 
+            onRangeChange={(min, max) => console.log(`Preço: R$${min} - R$${max}`)} 
+          />
+        </div>
+      </div>
+
     </section>
   )
 }

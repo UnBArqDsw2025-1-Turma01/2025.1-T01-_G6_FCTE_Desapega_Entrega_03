@@ -13,13 +13,11 @@ const CardLayout = ({
     ...props
 }) => {
     return (
-        <div {...props} className="p-4 rounded-[20px] w-fit min-w-[286px] min-h-[400px] font-inter">
-            <div className="">
-                <img src={productImage} alt="Imagem do bruto" className="w-full h-40  rounded-[20px]" />
-            </div>
-            <div className={`pt-[15px] font-bold text-[20px] w-fit text-secondary-500 ${!price ? 'invisible' : ''}`}>
+        <div {...props} className="p-4 rounded-[20px] min-w-full min-h-[400px] border flex flex-col justify-between">
+            <img src={productImage} alt="Imagem do bruto" className="w-full h-32  rounded-[20px]" />
+            <p className={`pt-[15px] font-bold text-[20px] w-fit text-secondary-500 ${!price ? 'invisible' : ''}`}>
             {price || 'R$ 100,00'}
-            </div>
+            </p>
 
             <div className="flex justify-between items-center pt-[10px] pb-[20px]">
                 <div>
@@ -31,7 +29,7 @@ const CardLayout = ({
                     </div>
                 </div>
                 <div>
-                    <img src={userImage} alt="Imagem do usuário" className="w-[60px] h-[60px] rounded-full" />
+                    <img src={userImage} alt="Imagem do usuário" className="min-w-12 h-12 rounded-full" />
                 </div>
             </div>
             <div className="flex justify-start">
