@@ -6,6 +6,8 @@ O padrão de projeto Strategy permite com que se faça uso de algoritimos que va
 
 Em vista disso, esse padrão de projeto foi utilizado nesta sessão com o objetivo alterar a lógica de filtro de cards em tempo de execução para facilitar a experiência do usuário e a manutenibilidade do código. Nesse sentido, a exibição dependerá da ação do usuário, o qual poderá selecionar entre os tipos de cards `venda, troca ou doação`.
 
+Assim, com o objetivo de manter a padronização do tipo de paradigma a ser inserido no projeto desenvolvido pela aquipe, foi optado por fazer uma adaptação do tipo orientado ao objeto para o funcional.
+
 ## Modelagem
 
 ![modelagem de cards usando o padrão factory Method](./../../assets/cardsStrategyModel.png)
@@ -16,48 +18,95 @@ Em vista disso, esse padrão de projeto foi utilizado nesta sessão com o objeti
 
 Segue abaixo o código demonstrando a implementação do padrão Strategy, porém adaptado para o paradigma funcional:
 
-### Classe Abstrata
 
-A função `` tem o objetivo de fornecer o mesmo método à suas subclasses correspondentes.
+### Função Contexto
 
-#### ``
+Usada para determinar qual componente será renderizado.
+
+#### `useCardStrategy`
+
+    export const useCardStrategy = () => {
+    const renderCard = (type, props) => {
+        const strategy = getCardStrategy(type);
+        return strategy(props);
+    };
+
+    return { renderCard };
+    };
+
+<br>
+<br>
+
+### Objeto de seleção
+
+Mapeia o tipo `(venda, troca, doacao)` para a função estratégica correspondente.
+
+#### `cardStrategies`
+
+    export const cardStrategies = {
+    venda: vendaCardStrategy,
+    troca: trocaCardStrategy,
+    doacao: doacaoCardStrategy,
+    };
+
+<br>
+<br>
+
+### Função para selecionar a estratégia
+
+Retorna uma estratégia válida ou uma default.
+
+#### `getCardStrategy`
+
+    export const getCardStrategy = (type) => {
+    const strategy = cardStrategies[type];
+    if (!strategy) {
+        console.warn(`Estratégia para o tipo '${type}' não encontrada. Usando estratégia padrão.`);
+        return cardStrategies.venda; // Estratégia padrão
+    }
+    return strategy;
+    };
+
+<br>
+<br>
+
+### Funções Concretas
+
+As funções a seguir tem o objetivo de retonar a criação de um componente react, podendo variar entre `CardPrimary, CardSecundary e CardTerciary`.
+
+#### `vendaCardStrategy`
+
+    export function vendaCardStrategy(props) {
+    return React.createElement(CardPrimary, props);
+    }
 
 
 
 <br>
 <br>
 
-### Sublasses Concretas
 
-As substrasses concretas possuem o objetivo de gerar componentes de seus respectivos tipos. Portanto, por exemplo, a subclasse `CardPrimaryConcrete` irá importar e retornar o componente `CardPrimary` e o mesmo ocorre com as outras subclasses a seguir.
+#### `trocaCardStrategy`
 
-#### ``
+    export function trocaCardStrategy(props) {
+    return React.createElement(CardSecundary, props);
+    }
 
-
-
-<br>
-<br>
-
-#### ``
 
 
 
 <br>
 <br>
 
-#### ``
+#### `doacaoCardStrategy`
 
+    export function doacaoCardStrategy(props) {
+    return React.createElement(CardTerciary, props);
+    }
 
 
 <br>
 <br>
-
-### Fábrica
-
-A fábrica `CardFactory` tem como objetivo guardar a lógica de criação de cards dentro de si. Logo, dependendo da variável a ser recebida, ele irá chamar uma subclasse concreta a qual irá renderizar seu respectivo componente.
-
-#### ``
-
 
 
 
