@@ -9,9 +9,21 @@ const estados = {
   FILLED: "filled",
 };
 
-export default function CustomInput() {
+export default function CustomInput({
+  type = "text",
+  placeholder = "Continue with Google",
+  value: externalValue,
+  onChange: externalOnChange,
+  className = "",
+  label = "",
+  disabled = false,
+  error = false,
+  supportText = "",
+  icon: Icon,
+  ...otherProps
+}) {
   const [value, setValue] = useState("");
-  const [estado, setEstado] = useState(estados.DEFAULT);
+  const [estado, setEstado] = useState(disabled ? estados.DISABLED : estados.DEFAULT);
 
   const borderClasses = {
     [estados.DEFAULT]: "border-gray-400",
@@ -22,16 +34,17 @@ export default function CustomInput() {
     [estados.FILLED]: "border-gray-400",
   };
 
-  const hasError = estado === estados.ERROR;
+  const hasError = error || estado === estados.ERROR;
 
   return (
-    <div className="w-80">
-      <label className="block text-sm font-bold mb-1">Label</label>
+    <div className="w-80 relative">
+      {Icon && <Icon className="w-6 h-6 absolute top-3 right-2 text-primary-800" />}
+      <label className="block text-sm font-bold mb-1">{label}</label>
       <input
-        type="text"
+        type={type}
         value={value}
-        disabled={estado === estados.DISABLED}
-        placeholder="Continue with Google"
+        disabled={disabled}
+        placeholder={placeholder}
         className={`
           w-full rounded-full px-4 py-2 border 
           transition 
@@ -41,8 +54,12 @@ export default function CustomInput() {
         onFocus={() => setEstado(estados.FOCUS)}
         onBlur={() => setEstado(value ? estados.FILLED : estados.DEFAULT)}
         onChange={(e) => {
-          setValue(e.target.value);
-          setEstado(e.target.value ? estados.FILLED : estados.DEFAULT);
+          if (externalOnChange) {
+            externalOnChange(e);
+          } else {
+            setValue(e.target.value);
+            setEstado(e.target.value ? estados.FILLED : estados.DEFAULT);
+          }
         }}
         onMouseEnter={() => {
           if (estado === estados.DEFAULT) setEstado(estados.HOVER);
@@ -50,27 +67,15 @@ export default function CustomInput() {
         onMouseLeave={() => {
           if (estado === estados.HOVER) setEstado(estados.DEFAULT);
         }}
+        {...otherProps}
       />
       <p
         className={`mt-1 text-xs ${
           hasError ? "text-red-500 font-semibold" : "text-gray-500"
         }`}
       >
-        {hasError ? "Texto de suporte" : "Texto de suporte"}
+        {supportText && supportText}
       </p>
-
-      <div className="flex gap-2 mt-4">
-        {Object.entries(estados).map(([key, val]) => (
-          <button
-            key={key}
-            className={`px-2 py-1 rounded text-xs border ${estado === val ? "bg-blue-100" : ""}`}
-            onClick={() => setEstado(val)}
-            type="button"
-          >
-            {key}
-          </button>
-        ))}
-      </div>
     </div>
   );
 }

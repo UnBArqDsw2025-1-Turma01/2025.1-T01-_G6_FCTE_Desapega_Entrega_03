@@ -1,13 +1,6 @@
 import React from "react";
 import Layout from "./components/Layout";
-import UserPopover from "./components/Layout/UserPopover";
-import { DropdownBuilder } from "./components/Layout/DropdownBuilder";
-
 import CardFactory from './pages/anuncios/factories/CardFactory';
-import { PowerIcon } from "@heroicons/react/24/solid";
-
-
-
 
 export default function App() {
     const cardVenda = CardFactory.create('venda'); // está com o valor padrão

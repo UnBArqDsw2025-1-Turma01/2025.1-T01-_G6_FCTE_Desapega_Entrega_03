@@ -2,7 +2,7 @@ import React from "react";
 import CardLayout from "./layout";
 import TemplateProduct from "./../../assets/template_produto.png";
 import TemplateUser from "./../../assets/template_user.png";
-import Button from "../Layout/button";
+import Button from "../Button/index";
 
 const CardSecundary = ({
   productImage,
