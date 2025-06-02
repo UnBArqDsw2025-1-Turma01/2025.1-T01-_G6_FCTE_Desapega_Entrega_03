@@ -1,19 +1,23 @@
-import React from "react";
-import Layout from "./components/layout/index/"
-import UserPopover from "./components/Layout/UserPopover";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import Anuncios from "./pages/Anuncios";
+import Cadastro from "./pages/Cadastro";
 
-export default function App() {
+function App() {
   return (
-        <Layout>
-      {/* Frase grandona antes do carrossel */}
-      <section className="text-center py-16 bg-white">
-        <h1 className="text-5xl font-bold text-gray-800">
-          DESAPEGOS DA <span className="text-orange-500">UNB</span> <br /> EM UM SÓ LUGAR
-        </h1>
-        <h2 className="mt-4 text-xl font-light text-gray-500 tracking-wide">
-          <strong> A comunidade da UnB em movimento</strong>
-        </h2>
-      </section>
-    </Layout>
-  );
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout logged={false} />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/anuncios" element={<Anuncios />} />
+            <Route path="/cadastro" element={<Cadastro />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
 }
+
+export default App;
