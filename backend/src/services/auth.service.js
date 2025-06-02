@@ -1,21 +1,22 @@
-// Singleton
-const bcrypt = require('bcrypt');
-const { User } = require('../models');
-
-class AuthService {
-    static instance;
-
-    static getInstance() {
-        if (!AuthService.instance) {
-            AuthService.instance = new AuthService();
-        }
-        return AuthService.instance;
-    }
-
-    async login(strategy, credentials) {
+function createAuthService() {
+    async function login(strategy, credentials) {
         return strategy.authenticate(credentials);
     }
+
+    return { login };
 }
 
-module.exports = AuthService;
+// Singleton
+let authServiceInstance;
+
+function getAuthService() {
+    if (!authServiceInstance) {
+        authServiceInstance = createAuthService();
+    }
+    return authServiceInstance;
+    }
+
+module.exports = getAuthService;
+
+
 

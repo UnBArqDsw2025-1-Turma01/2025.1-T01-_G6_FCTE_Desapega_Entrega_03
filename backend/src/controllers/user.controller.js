@@ -1,7 +1,10 @@
 const userService = require('../services/user.service');
-const EmailUnbLoginStrategy = require('../strategy/emailUnbLogin.strategy');
-const AuthService = require('../services/auth.service'); 
-const UserFactory = require('../factory/userFactory');
+
+const userFacade = require('../facades/user.facade')
+const emailUnbStrategy = require('../strategy/emailUnbLogin.strategy'); 
+const getAuthService = require('../services/auth.service'); 
+const UserFactory = require('../factory/userFactory'); 
+
 
 async function getUsers(req, res, next) {
   try {
@@ -59,11 +62,10 @@ async function updateUser(req, res, next)
 
 const login = async (req, res) => {
   const { email, password } = req.body;
-  const authService = AuthService.getInstance();
-  const strategy = new EmailUnbLoginStrategy();
+  const authService = getAuthService();
 
   try {
-    const user = await authService.login(strategy, { email, password });
+    const user = await authService.login(emailUnbStrategy, { email, password }); 
     const userObj = UserFactory.createUser(user);
 
     res.status(200).json({

@@ -1,7 +1,7 @@
-class LoginStrategy {
-    async authenticate(credentials) {
-        throw new Error('Método authenticate() deve ser implementado pela subclasse');
-    }
+function notImplemented() {
+    throw new Error('Função de autenticação não implementada');
 }
 
-module.exports = LoginStrategy;
+module.exports = {
+    authenticate: notImplemented
+};
