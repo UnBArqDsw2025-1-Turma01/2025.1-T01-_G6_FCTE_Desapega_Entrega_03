@@ -3,7 +3,7 @@ O Chain of Responsibility (ou Cadeia de Responsabilidade) é um padrão de desig
 
 ## Estrutura do Chain of Responsability
 
-![Estrutura padrão do Chain of Resposability](../../../../assets/chain-estrutura-padrao.png)
+![Estrutura padrão do Chain of Resposability](../../../../../assets/chain-estrutura-padrao.png)
 
 #### 1. Handler (Manipulador):
 
