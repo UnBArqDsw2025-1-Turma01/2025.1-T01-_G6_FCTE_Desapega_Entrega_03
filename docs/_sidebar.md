@@ -9,6 +9,7 @@
       - [3.1.1. Factory Method](/PadroesDeProjeto/FactoryMethod/factoryResume.md)
         - [3.1.1.1. Cards](/PadroesDeProjeto/FactoryMethod/cardFactory.md)
     - [3.2. Padrões de Projeto GoFs Estruturais](/docs/PadroesDeProjeto/3.2.GoFsEstruturais.md)
+      - [3.2.1. Decorator](/PadroesDeProjeto/Decorador/cardDecorator.md)
     - [3.3. Padrões de Projeto GoFs Comportamentais](/PadroesDeProjeto/3.3.GoFsComportamentais.md)
       - [3.3.1. Estrategy](/PadroesDeProjeto/Strategy/cardStrategy.md)
         - [3.3.1.1 Cards](/PadroesDeProjeto/Strategy/cardStrategy.md)
