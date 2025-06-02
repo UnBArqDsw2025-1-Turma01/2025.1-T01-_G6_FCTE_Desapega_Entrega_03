@@ -15,7 +15,11 @@
     - 3.2. Padrões de Projeto GoFs Estruturais
       - **Facade**
         - Backend
-          - [1ª Aplicação](./assets/PadroesDeProjeto/Estruturais/Facade/facade.md)
+          - [1ª Aplicação](./assets/PadroesDeProjeto/Estruturais/Facade/Backend/facade.md)
+
+      - **Composite**
+        - Frontend
+          - [1ª Aplicação](./assets/PadroesDeProjeto/Estruturais/Composite/Frontend/viewAnuncios.md)
     - 3.3. Padrões de Projeto GoFs Comportamentais
       - **Estrategy**
         - Frontend

@@ -38,7 +38,7 @@ Em resumo, a aplicação do padrão Facade neste projeto proporcionou uma arquit
 
 ## Implementação do Padrão no Projeto
 
-![Estrutura do Facade no Projeto](./../../../diagrama-facade.jpg)
+![Estrutura do Facade no Projeto](./../../../../diagrama-facade.jpg)
 
 ## Código com o Padrão Facade 
 Abaixo segue os códigos que foram montados para implementar o padrão Facade no projeto.
