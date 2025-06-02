@@ -8,7 +8,7 @@ Sendo assim, foi pensado que, por termos 3 tipos diferentes de operações que o
 
 ## Modelagem
 
-![modelagem de cards usando o padrão factory Method](./../../assets/cardsFactoryMethodModel.png)
+![modelagem de cards usando o padrão factory Method](./../../../../assets/cardsFactoryMethodModel.png)
 
 <font size="3"><p style="text-align: center"><b>Figura 1: </b>Modelagem do Factory Method aplicado aos cards da aplicação.</p></font>
 

@@ -10,7 +10,7 @@ Assim, com o objetivo de manter a padronização do tipo de paradigma a ser inse
 
 ## Modelagem
 
-![modelagem de cards usando o padrão Strategy](./../../assets/cardsStrategyModel.png)
+![modelagem de cards usando o padrão Strategy](./../../../../assets/cardsStrategyModel.png)
 
 <font size="3"><p style="text-align: center"><b>Figura 1: </b>Modelagem do Padrão de projeto Strategy aplicado aos filtros dos cards da aplicação.</p></font>
 

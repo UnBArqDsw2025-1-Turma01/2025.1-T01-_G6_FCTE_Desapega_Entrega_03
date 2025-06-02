@@ -8,7 +8,7 @@ Além disso, o padrão Factory Method pode ser utilizado quando há a necessidad
 ## Implementação
 Uma das maneiras de se implementar o padrão Factory Method é através do modelo a seguir:
 
-![modelagem de cards usando o padrão factory Method](./../../assets/factoryMethodStructure.png)
+![modelagem de cards usando o padrão factory Method](./../../../../assets/factoryMethodStructure.png)
 
 <font size="3"><p style="text-align: center"><b>Figura 1: </b>Modelagem do Padrão de projeto Factory Method.</p></font>
 
