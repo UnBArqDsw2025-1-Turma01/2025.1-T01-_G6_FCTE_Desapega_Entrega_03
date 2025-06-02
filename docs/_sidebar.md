@@ -19,7 +19,7 @@
     - 3.3. Padrões de Projeto GoFs Comportamentais
       - **Estrategy**
         - Frontend
-          - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Strategy/Frontend/cardStrategy.md)         
+          - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Frontend/Strategy/cardStrategy.md)         
       - **Chain Of Responsability**
         - Backend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Backend/chain-ad.md)
