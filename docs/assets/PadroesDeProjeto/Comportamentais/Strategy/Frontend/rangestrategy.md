@@ -13,7 +13,7 @@ O componente RangeDePreco é um controle deslizante de faixa de preço que permi
 
 ## Modelagem
 
-![modelagem do range usando o padrão Strategy](./../../../DiagramaRangeStrategy.png)
+![modelagem do range usando o padrão Strategy](./../../../../../assets/DiagramaRangeStrategy.png)
 
 <font size="3"><p style="text-align: center"><b>Figura 1: </b>Modelagem do Padrão de projeto Strategy aplicado ao componente range.</p></font>
 
