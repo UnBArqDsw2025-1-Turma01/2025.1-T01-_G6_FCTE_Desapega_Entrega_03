@@ -15,7 +15,7 @@
           - [2ª Aplicação](./assets/PadroesDeProjeto/Criacionais/FactoryMethod/Backend/FactoryBackend.md)
       - **Builder**
           - [1ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Builder/Frontend/builder.md)
-          - [2ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Builder/Frontend/builderCadastro.md)
+          - [2ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Builder/Frontend/buildercadastro.md)
     - 3.2. Padrões de Projeto GoFs Estruturais
       - **Facade**
         - Backend
