@@ -8,7 +8,7 @@ Essa abordagem permite que a lógica de construção de cada tipo de input fique
 
 ## Modelagem
 
-![modelagem de cards usando o padrão factory Method](./../../../../../assets/factoryGabriel.jpg)
+![Modelagem de cards usando o padrão factory Method](./../../../../../assets/factoryGabriel.jpg)
 
 <font size="3"><p style="text-align: center"><b>Figura 1: </b>Modelagem do Factory Method aplicado ao componente input.</p></font>
 
@@ -41,7 +41,7 @@ Segue abaixo o código demonstrando a implementação do FactoryMethod:
         <tr>
             <td>06/02/2025</td>
             <td>1.0</td>
-            <td>Revisado a introdução, documentação e se seguia os padrões da referência</td>
+            <td>Criação do documento</td>
             <td><a href="https://github.com/GabrielSMonteiro">Gabriel Monteiro</a></td>
             <td></td>
             <td></td>
