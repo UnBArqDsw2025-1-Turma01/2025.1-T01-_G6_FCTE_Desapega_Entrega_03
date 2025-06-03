@@ -6,9 +6,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 const LoggedNavbar = () => {
   return (
     <>
-      <InputFactory
-        icon={MagnifyingGlassIcon}
-        type="text" />
+      <InputFactory icon={MagnifyingGlassIcon} type="text" />
       <UserPopover />
     </>
   );
