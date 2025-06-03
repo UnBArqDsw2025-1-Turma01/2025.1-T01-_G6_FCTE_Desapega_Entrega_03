@@ -7,7 +7,7 @@ Durante o desenvolvimento da interface, surgiu a necessidade de destacar visualm
 
 ## Modelagem
 
-![modelagem de cards usando o padrão Decorator](./../../assets/Decorator.png)
+![modelagem de cards usando o padrão Decorator](./../../../../Decorator.png)
 
 <font size="3"><p style="text-align: center"><b>Figura 1: </b>Modelagem do Decorator aplicado aos cards da aplicação.</p></font>
 
