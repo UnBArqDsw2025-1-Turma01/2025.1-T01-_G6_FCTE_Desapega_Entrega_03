@@ -5,7 +5,7 @@ O Facade é um padrão de projeto estrutural, definido no catálogo Gang of Four
 ## Estrutura Facade
 A estrutura clássica do Facade envolve três componentes principais:
 
-![Estrutura padrão do Facade](./../../../facade-estrutura-padrao.png)
+![Estrutura padrão do Facade](../../../../facade-estrutura-padrao.png)
 
 1. **Facade** (fachada): é a interface simplificada que expõe métodos de alto nível, ocultando a complexidade do subsistema.
 

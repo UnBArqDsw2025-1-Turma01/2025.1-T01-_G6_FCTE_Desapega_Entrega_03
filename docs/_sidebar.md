@@ -12,6 +12,10 @@
         - Backend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Criacionais/FactoryMethod/Backend/factoryResume.md)
           - [2ª Aplicação](./assets/PadroesDeProjeto/Criacionais/FactoryMethod/Backend/FactoryBackend.md)
+      - **Singleton**
+        - Backend
+          - [1ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Singleton/Backend/singleton.md)
+       
     - 3.2. Padrões de Projeto GoFs Estruturais
       - **Facade**
         - Backend
@@ -23,7 +27,9 @@
     - 3.3. Padrões de Projeto GoFs Comportamentais
       - **Estrategy**
         - Frontend
-          - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Strategy/Frontend/cardStrategy.md)         
+          - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Strategy/Frontend/cardStrategy.md)   
+        - Backend
+          - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Strategy/Backend/strategy.md)         
       - **Chain Of Responsability**
         - Backend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Chain/Backend/chain-ad.md)
