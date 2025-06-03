@@ -15,13 +15,13 @@
           - [2ª Aplicação](./assets/PadroesDeProjeto/Criacionais/FactoryMethod/Backend/FactoryBackend.md)
 
       - **Builder**
-        - Frontend
-            [1ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Builder/Frontend/builder.md)   
+          - [1ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Builder/Frontend/builder.md)
+          - [2ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Builder/Frontend/buildercadastro.md)
 
       - **Singleton**
         - Backend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Singleton/Backend/singleton.md)
-    
+          
     - 3.2. Padrões de Projeto GoFs Estruturais
       - **Facade**
         - Backend
@@ -35,7 +35,7 @@
 
       - **Decorator**
         - Frontend
-          - [1ª Aplicação](./assets/PadroesDeProjeto/Estruturais/Decorador/frontend/decorator.md)
+          - [1ª Aplicação](./assets/PadroesDeProjeto/Estruturais/Decorator/Frontend/decotador.md)
 
       - **Adapter**
         - Frontend
@@ -51,9 +51,7 @@
         - Backend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Strategy/Backend/strategy.md)         
       - **Chain Of Responsability**
+        - Frontend
+          - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Chain/Frontend/chain-ad.md)
         - Backend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Chain/Backend/chain-ad.md)
-
-    - [3.4. Participações - Padrões de Projeto](./assets/PadroesDeProjeto/3.4.ParticipacoesPadroes.md)
-    - [3.5. Iniciativas Extras - Padrões de Projeto](./assets/PadroesDeProjeto/3.5.IniciativasExtras.md)
-      
