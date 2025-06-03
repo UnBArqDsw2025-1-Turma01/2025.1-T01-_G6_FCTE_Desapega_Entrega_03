@@ -40,6 +40,19 @@ Em resumo, a aplicação do padrão Facade neste projeto proporcionou uma arquit
 
 ![Estrutura do Facade no Projeto](./../../../../diagrama-facade.jpg)
 
+
+## Videos explicando código que mostram o facade
+
+### Usuários
+
+<iframe width="1328" height="747" src="https://www.youtube.com/embed/5clXM9tl8RE" title="Apresentação do User no banco de dados" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+### Funcionamento das requsições
+
+<iframe width="1328" height="747" src="https://www.youtube.com/embed/ZaWy8Xyx2Ms" title="Testes de Requisições do código - Grupo 06" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 ## Código com o Padrão Facade 
 Abaixo segue os códigos que foram montados para implementar o padrão Facade no projeto.
 
@@ -206,6 +219,13 @@ Chama diretamente o método `adService.deleteAdById`, passando o `id` do anúnci
 Não realiza validações adicionais, assumindo que o `id` fornecido é válido.  
 Retorna o resultado da exclusão.
 
+
+## Bibliografia
+
+> GRAN CURSOS ONLINE. Padrões de Projetos GoF: dicas de memorização e questões de concursos. Blog Gran Cursos Online, [s.d.]. Disponível em: https://blog.grancursosonline.com.br/padroes-de-projetos-gof-dicas-de-memorizacao-e-questoes-de-concursos/. Acesso em: 2 jun. 2025.
+
+
+
 <div align="center">
     <table>
         <tr>
@@ -225,6 +245,15 @@ Retorna o resultado da exclusão.
             <td>02/06/2025</td>
             <td><a href="https://github.com/Jagaima">Davi Nobre</a></td>
             <td>Foi revisado o diagrama de classes da dupla que faço parte, seu posicionamento no documento e se era possível acessa-lo</td>
+        </tr>
+        <tr>
+            <td>02/06/2025</td>
+            <td>1.1</td>
+            <td>Acrescentando videos comprobatórios</td>
+            <td><a href="https://github.com/Jagaima" >Davi Nobre</a> e <a href="https://github.com/arthur-suares">Arthur Suares</a></td>
+            <td>02/06/2025</td>
+            <td><a href="https://github.com/"></a></td>
+            <td></td>
         </tr>
     </table>
 </div>

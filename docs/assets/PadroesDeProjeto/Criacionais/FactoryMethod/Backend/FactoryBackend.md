@@ -37,9 +37,21 @@ Aqui temos modos como foi pensando o uso do factory no projeto:
 <p align="center"><em>Autores(as): <a href="https://github.com/arthur-suares">Arthur Suares</a> e <a href="https://github.com/Jagaima">Davi Nobre</a>, 2025.</em></p>
 
 
-## Videos de explicação do Código do Factory 
+## Videos de explicação do Código do Factory (são os mesmos da página Facade e chain of responsability)
+
+### Usuários
 
 <iframe width="1328" height="747" src="https://www.youtube.com/embed/5clXM9tl8RE" title="Apresentação do User no banco de dados" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+### Anuncios
+
+<iframe width="1328" height="747" src="https://www.youtube.com/embed/3zuw2wxjNAs" title="Explicação dos GOFs aplicados em Anúncios - Grupo 06" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+### Funcionamento das requsições
+
+<iframe width="1328" height="747" src="https://www.youtube.com/embed/ZaWy8Xyx2Ms" title="Testes de Requisições do código - Grupo 06" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ## Código com padrão Factory
@@ -234,6 +246,15 @@ Paper (2014)
             <td>02/06/2025</td>
             <td><a href="https://github.com/arthur-suares">Arthur</a></td>
             <td>Foi revisado o diagrama de classes da dupla que faço parte, seu posicionamento no documento e se era possível acessa-lo, como participei de co-autoria desta etapa, não vejo o que mais pode ser incluido ou excluido com exceção de alguns erros de concordância corrigidos.</td>
+        </tr>
+        <tr>
+            <td>02/06/2025</td>
+            <td>1.1</td>
+            <td>Acrescentando videos comprobatórios</td>
+            <td><a href="https://github.com/Jagaima" >Davi Nobre</a> e <a href="https://github.com/arthur-suares">Arthur Suares</a></td>
+            <td>02/06/2025</td>
+            <td><a href="https://github.com/"></a></td>
+            <td></td>
         </tr>
     </table>
 </div>
