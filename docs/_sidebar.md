@@ -16,6 +16,10 @@
       - **Builder**
           - [1ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Builder/Frontend/builder.md)
           - [2ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Builder/Frontend/buildercadastro.md)
+
+      - **Singleton**
+        - Backend
+          - [1ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Singleton/Backend/singleton.md)
     - 3.2. Padrões de Projeto GoFs Estruturais
       - **Facade**
         - Backend
@@ -36,6 +40,9 @@
       - **Comand**
         - Frontend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Comand/Frontend/comand.md)
+          - [2ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Strategy/Frontend/cardStrategy.md)   
+        - Backend
+          - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Strategy/Backend/strategy.md)         
       - **Chain Of Responsability**
         - Backend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Chain/Backend/chain-ad.md)
