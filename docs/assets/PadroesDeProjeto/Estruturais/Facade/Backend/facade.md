@@ -5,7 +5,7 @@ O Facade é um padrão de projeto estrutural, definido no catálogo Gang of Four
 ## Estrutura Facade
 A estrutura clássica do Facade envolve três componentes principais:
 
-![Estrutura padrão do Facade](./../../../facade-estrutura-padrao.png)
+![Estrutura padrão do Facade](../../../../facade-estrutura-padrao.png)
 
 1. **Facade** (fachada): é a interface simplificada que expõe métodos de alto nível, ocultando a complexidade do subsistema.
 
@@ -220,11 +220,25 @@ Não realiza validações adicionais, assumindo que o `id` fornecido é válido.
 Retorna o resultado da exclusão.
 
 
+## Erros Comuns
+
+Ao implementar o padrão Facade, é importante estar ciente de alguns erros comuns que podem comprometer a eficácia do padrão:
+
+1. *Uso Excessivo do Facade*: Embora o Facade seja útil para simplificar interações com subsistemas complexos, usá-lo em excesso pode levar a um design onde a lógica de negócios é centralizada demais, tornando o sistema rígido e difícil de modificar.
+
+2. *Facade Muito Complexo*: Um Facade deve fornecer uma interface simplificada. Se o Facade começar a incluir muita lógica ou se tornar tão complexo quanto o subsistema que ele pretende simplificar, ele perde seu propósito. Mantenha o Facade focado em expor apenas as funcionalidades essenciais.
+
+3. *Dependência Cíclica*: Evite criar dependências cíclicas entre o Facade e os subsistemas. O Facade deve depender dos subsistemas, mas não o contrário.
+
+4. *Falta de Flexibilidade*: Um Facade mal projetado pode limitar a flexibilidade do sistema, especialmente se ele não permitir que o cliente acesse funcionalidades específicas dos subsistemas quando necessário.
+
+5. *Subutilização do Facade*: Por outro lado, não utilizar o Facade quando ele poderia simplificar significativamente a interação com subsistemas complexos também é um erro. Avalie cuidadosamente onde o Facade pode agregar valor.
+
+Ao estarmos ciente desses erros comuns, podemos implementar o padrão Facade de maneira mais eficaz, garantindo que ele realmente simplifique o sistema e melhore a manutenibilidade do código.
+
 ## Bibliografia
 
 > GRAN CURSOS ONLINE. Padrões de Projetos GoF: dicas de memorização e questões de concursos. Blog Gran Cursos Online, [s.d.]. Disponível em: https://blog.grancursosonline.com.br/padroes-de-projetos-gof-dicas-de-memorizacao-e-questoes-de-concursos/. Acesso em: 2 jun. 2025.
-
-
 
 <div align="center">
     <table>
@@ -252,8 +266,17 @@ Retorna o resultado da exclusão.
             <td>Acrescentando videos comprobatórios</td>
             <td><a href="https://github.com/Jagaima" >Davi Nobre</a> e <a href="https://github.com/arthur-suares">Arthur Suares</a></td>
             <td>02/06/2025</td>
-            <td><a href="https://github.com/"></a></td>
-            <td></td>
+            <td><a href="https://github.com/Renata">Renata</a></td>
+            <td>Foi revisado os textos adicionados</td>
+        </tr>
+        <tr>
+            <td>02/06/2025</td>
+            <td>1.2</td>
+            <td>Acrescentando explicações feitas por Renata e Eduarda</td>
+            <td><a href="https://github.com/RenataKurzawa">Renata</a> e <a href="https://github.com/erteduarda">Eduarda</a></td>
+            <td>02/06/2025</td>
+            <td><a href="https://github.com/Renata">Renata</a></td>
+            <td>Foi revisado os textos adicionados e também oque já havia no documento feito pelo Davi e Arthur</td>
         </tr>
     </table>
 </div>
