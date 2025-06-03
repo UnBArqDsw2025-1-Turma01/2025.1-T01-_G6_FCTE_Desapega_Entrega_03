@@ -37,6 +37,11 @@ Aqui temos modos como foi pensando o uso do factory no projeto:
 <p align="center"><em>Autores(as): <a href="https://github.com/arthur-suares">Arthur Suares</a> e <a href="https://github.com/Jagaima">Davi Nobre</a>, 2025.</em></p>
 
 
+## Videos de explicação do Código do Factory 
+
+<iframe width="1328" height="747" src="https://www.youtube.com/embed/5clXM9tl8RE" title="Apresentação do User no banco de dados" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 ## Código com padrão Factory
 
 A seguir está os momentos em que foi usado o padrão Factory no código: 
