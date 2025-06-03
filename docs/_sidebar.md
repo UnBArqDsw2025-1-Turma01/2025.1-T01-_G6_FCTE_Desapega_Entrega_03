@@ -15,14 +15,11 @@
           - [2ª Aplicação](./assets/PadroesDeProjeto/Criacionais/FactoryMethod/Backend/FactoryBackend.md)
       - **Builder**
           - [1ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Builder/Frontend/builder.md)
-<<<<<<< HEAD
-          - [2ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Builder/Frontend/buildercadastro.md)
-=======
+          <!-- - [2ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Builder/Frontend/buildercadastro.md) -->
       - **Singleton**
         - Backend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Singleton/Backend/singleton.md)
        
->>>>>>> 2c9cfd96b388987843da218c54c459c548f3e6f1
     - 3.2. Padrões de Projeto GoFs Estruturais
       - **Facade**
         - Backend
@@ -34,7 +31,7 @@
           - [1ª Aplicação](./assets/PadroesDeProjeto/Estruturais/Composite/Frontend/viewAnuncios.md)
       - **Decorator**
         - Frontend
-          - [1ª Aplicação](./assets/PadroesDeProjeto/Estruturais/Decorator/Frontend/Decorator.md)
+          - [1ª Aplicação](./assets/PadroesDeProjeto/Estruturais/Decorador/frontend/decorator.md)
     - 3.3. Padrões de Projeto GoFs Comportamentais
       - **Estrategy**
         - Frontend
