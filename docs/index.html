@@ -7,6 +7,23 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    /* Personalização da largura da sidebar */
+    .sidebar {
+      width: 400px;
+    }
+    .content {
+      margin-left: 100px;
+    }
+    @media screen and (max-width: 768px) {
+      .sidebar {
+        left: -400px;
+      }
+      body.close .sidebar {
+        transform: translateX(400px);
+      }
+    }
+  </style>
 </head>
 <body>
   <div id="app"></div>

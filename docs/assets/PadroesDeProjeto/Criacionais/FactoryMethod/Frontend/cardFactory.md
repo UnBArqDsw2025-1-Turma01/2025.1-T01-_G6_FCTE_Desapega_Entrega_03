@@ -1,4 +1,4 @@
-# Cards
+# Componente Card de Anúncios
 
 ## Introdução
 
@@ -8,7 +8,7 @@ Sendo assim, foi pensado que, por termos 3 tipos diferentes de operações que o
 
 ## Modelagem
 
-![modelagem de cards usando o padrão factory Method](./../../assets/cardsFactoryMethodModel.png)
+![modelagem de cards usando o padrão factory Method](./../../../../../assets/cardsFactoryMethodModel.png)
 
 <font size="3"><p style="text-align: center"><b>Figura 1: </b>Modelagem do Factory Method aplicado aos cards da aplicação.</p></font>
 
@@ -110,7 +110,7 @@ A fábrica `CardFactory` tem como objetivo guardar a lógica de criação de car
     export default CardFactory;
 
 
-# Bibliografia
+## Bibliografia
 
 
 > GAMMA, Erich et al. Factory Method – Padrões de Projeto. Refactoring Guru. Disponível em: https://refactoring.guru/pt-br/design-patterns/factory-method. Acesso em: 31 maio 2025.
@@ -127,15 +127,17 @@ A fábrica `CardFactory` tem como objetivo guardar a lógica de criação de car
             <th>Descrição</th>
             <th>Autor</th>
             <th>Data da Revisão</th>
+            <th>Descrição da revisão</th>
             <th>Revisor</th>
         </tr>
         <tr>
             <td>01/06/2025</td>
             <td>1.0</td>
             <td>Adicionando o porque usar o padrão, os códigos e imagem</td>
-            <td><a href="https://github.com/Marianannn">Mariana Letícia</a> <a href="https://github.com/ccarla">Carla A C Ribeiro</a></td>
-            <td>00/00/0000</td>
-            <td><a href="https://github.com/SEU_GIT]">SEU_NOME</a></td>
+            <td><a href="https://github.com/Marianannn">Mariana Letícia</a> e <a href="https://github.com/ccarla">Carla A C Ribeiro</a></td>
+            <td>06/02/2025</td>
+            <td>Revisado a introdução, documentação e se seguia os padrões da referência</td>
+            <td><a href="https://github.com/GabrielSMonteiro">Gabriel Monteiro</a></td>
         </tr>
     </table>
 </div>
