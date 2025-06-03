@@ -6,18 +6,18 @@ import Cadastro from "./pages/Cadastro";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<Layout logged={false} />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/anuncios" element={<Anuncios />} />
-        </Route>
-        <Route element={<Layout logged={true} />}>
-           <Route path="/cadastro" element={<Cadastro />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout logged={false} />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/anuncios" element={<Anuncios />} />
+            <Route path="/cadastro" element={<Cadastro />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
 }
 
 export default App;

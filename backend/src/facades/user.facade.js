@@ -14,29 +14,31 @@ class UserFacade
 
             if (!id) 
             {
-                console.log("Por favor, forneça um ID");
-                return;
-                // return res.status(400).send({ message: 'Por favor, forneça um ID.' });
+                console.log("Falha: ID não fornecido para atualização.");
+                return { success: false, message: "ID ausente" };
+                // return res.status(400).send({ message: 'Falha: ID não fornecido para atualização.' });
             }
         
             if (!update_user_params || Object.keys(update_user_params).length === 0) 
             {
                 console.log("Nenhum dado para atualizar foi fornecido.");
-                return; 
+                return { success: false, message: "Corpo vazio" };  
                 // return res.status(400).send({ message: 'Nenhum dado para atualizar foi fornecido.' });
             }
-    
-            return await userService.updateUserById(id, update_user_params);
-        
+            
+            console.log(`Atualizando usuário ${id} com dados:`, update_user_params);
+
+            const result = await userService.updateUserById(id, update_user_params);
+            return { success: true, data: result };
         
         }
         catch (err)
         {
-            console.error(err);
-            return err; 
+            console.error("Erro inesperado:", err);
+            return { success: false, error: err.message };
             //res.status(500).send({ message: 'Erro ao atualizar usuário.', error: err.message });
         }
     }
 }
 
-module.exports = new UserFacade();
+module.exports = new UserFacade()

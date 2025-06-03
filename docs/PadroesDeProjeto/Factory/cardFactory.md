@@ -110,7 +110,7 @@ A fábrica `CardFactory` tem como objetivo guardar a lógica de criação de car
     export default CardFactory;
 
 
-## Bibliografia
+# Bibliografia
 
 
 > GAMMA, Erich et al. Factory Method – Padrões de Projeto. Refactoring Guru. Disponível em: https://refactoring.guru/pt-br/design-patterns/factory-method. Acesso em: 31 maio 2025.
@@ -127,16 +127,14 @@ A fábrica `CardFactory` tem como objetivo guardar a lógica de criação de car
             <th>Descrição</th>
             <th>Autor</th>
             <th>Data da Revisão</th>
-            <th>Descrição da revisão</th>
             <th>Revisor</th>
         </tr>
         <tr>
             <td>01/06/2025</td>
             <td>1.0</td>
             <td>Adicionando o porque usar o padrão, os códigos e imagem</td>
-            <td><a href="https://github.com/Marianannn">Mariana Letícia</a> e <a href="https://github.com/ccarla">Carla A C Ribeiro</a></td>
+            <td><a href="https://github.com/Marianannn">Mariana Letícia</a> <a href="https://github.com/ccarla">Carla A C Ribeiro</a></td>
             <td>00/00/0000</td>
-            <td></td>
             <td><a href="https://github.com/SEU_GIT]">SEU_NOME</a></td>
         </tr>
     </table>
