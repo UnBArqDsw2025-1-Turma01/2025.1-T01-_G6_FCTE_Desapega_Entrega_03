@@ -17,10 +17,7 @@
       - **Builder**
         - Frontend
             [1ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Builder/Frontend/builder.md)   
-         
-      - **Builder**
-          - [1ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Builder/Frontend/builder.md)
-          <!-- - [2ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Builder/Frontend/buildercadastro.md) -->
+
       - **Singleton**
         - Backend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Singleton/Backend/singleton.md)
@@ -32,7 +29,6 @@
         - Frontend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Estruturais/Facade/Frontend/aqui.md)
 
-          - [1ª Aplicação](./assets/PadroesDeProjeto/Estruturais/Facade/Frontend/facade.md)
       - **Composite**
         - Frontend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Estruturais/Composite/Frontend/viewAnuncios.md)
@@ -43,22 +39,15 @@
       - **Estrategy**
         - Frontend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Strategy/Frontend/cardStrategy.md)
-          - [2ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Strategy/Frontend/rangestrategy.md)   
-      - **Comand**
+      - **Command**
         - Frontend
-          - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Comand/Frontend/comand.md)
-          - [2ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Strategy/Frontend/cardStrategy.md)   
+          - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Command/Frontend/Command.md)
         - Backend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Strategy/Backend/strategy.md)         
       - **Chain Of Responsability**
         - Backend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Chain/Backend/chain-ad.md)
-      - **Command**
-        - Frontend
-          - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Command/Frontend/Command.md)        
-        - Frontend
-          - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Chain/Frontend/chain-ad.md)
-        
+
     - [3.4. Participações - Padrões de Projeto](./assets/PadroesDeProjeto/3.4.ParticipacoesPadroes.md)
     - [3.5. Iniciativas Extras - Padrões de Projeto](./assets/PadroesDeProjeto/3.5.IniciativasExtras.md)
       

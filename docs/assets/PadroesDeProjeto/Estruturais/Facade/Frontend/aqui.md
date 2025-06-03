@@ -2,7 +2,7 @@
 O padrão Facade simplifica o uso de sistemas complexos ao oferecer uma interface única e fácil de usar, escondendo os detalhes internos. Ele centraliza a lógica de decisão, reduz o acoplamento e facilita a manutenção do código. É ideal quando queremos alternar entre diferentes comportamentos ou componentes sem expor essa complexidade ao restante da aplicação.
 
 ### Modelagem 
-![Modelagem do Facade](../../../../facade.png)
+![Modelagem do Facade](../../../../Facade.png)
 
 ### Código 
 Segue abaixo o código demonstrando a implementação do Facade
