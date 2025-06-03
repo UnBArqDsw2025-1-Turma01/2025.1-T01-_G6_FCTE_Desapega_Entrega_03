@@ -3,12 +3,14 @@
 ## Introdução
 
 
+<br>
 
 ## Modelagem
 
 ![modelagem da pagina de cadastro](./../../assets/builder.png)
 
 <font size="3"><p style="text-align: center"><b>Figura 1: </b>Modelagem do Padrão criacional de projeto Builder aplicado na criação da página de cadastro.</p></font>
+<br>
 
 ### Código
 ### Builder (Interface)
@@ -117,6 +119,8 @@ Resumo do Codigo usando o Gof **Builder**
 | **ConcreteBuilder**     | `FormBuilder`                       | Implementa os métodos do builder, armazenando os campos e montando o formulário.  |
 | **Product**             | `JSX.Element[]`                     | O formulário composto de campos JSX (e.g., `<input>`).                            |
 | **Director**            | `CadastroPage`                      | Usa o `FormBuilder` para construir um formulário com uma configuração específica. |
+
+<br>
 
 
 ## Referências Bibliográficas
