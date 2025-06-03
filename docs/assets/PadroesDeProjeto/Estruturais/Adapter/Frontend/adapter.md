@@ -12,7 +12,7 @@ O padrão Adapter promove maior flexibilidade, reutilização de código e facil
 
 ![Modelagem de cards usando o padrão Adapter](./../../../../../assets/adapterGabriel.jpg)
 
-<font size="3"><p style="text-align: center"><b>Figura 1: </b>Modelagem do Factory Method aplicado ao componente input.</p></font>
+<font size="3"><p style="text-align: center"><b>Figura 1: </b>Modelagem do Adapter aplicado ao componente input.</p></font>
 
 ## Código
 
