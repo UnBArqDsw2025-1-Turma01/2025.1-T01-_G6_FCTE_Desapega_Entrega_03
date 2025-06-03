@@ -15,6 +15,7 @@
           - [2ª Aplicação](./assets/PadroesDeProjeto/Criacionais/FactoryMethod/Backend/FactoryBackend.md)
       - **Builder**
           - [1ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Builder/Frontend/builder.md)
+          - [2ª Aplicação](./assets/PadroesDeProjeto/Criacionais/Builder/Frontend/builderCadastro.md)
     - 3.2. Padrões de Projeto GoFs Estruturais
       - **Facade**
         - Backend
@@ -24,10 +25,14 @@
       - **Composite**
         - Frontend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Estruturais/Composite/Frontend/viewAnuncios.md)
+     - **Decorator**
+         - Frontend
+          - [1ª Aplicação](./assets/PadroesDeProjeto/Estruturais/Decorator-Frontend/Decorator.md)
     - 3.3. Padrões de Projeto GoFs Comportamentais
       - **Estrategy**
         - Frontend
-          - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Strategy/Frontend/cardStrategy.md)  
+          - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Strategy/Frontend/cardStrategy.md)
+          - [2ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Strategy/Frontend/rangestrategy.md)   
       - **Comand**
         - Frontend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Comportamentais/Comand/Frontend/comand.md)
