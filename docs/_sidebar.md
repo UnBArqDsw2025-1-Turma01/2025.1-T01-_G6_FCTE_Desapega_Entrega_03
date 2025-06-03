@@ -6,6 +6,7 @@
 - **Padrões de Projeto**
   - [3. Desenho de Software (Padrões de Projeto)](/docs/PadroesDeProjeto/3.PadroesDeProjeto.md)
     - [3.1. Padrões de Projeto GoFs Criacionais](/PadroesDeProjeto/3.1.GoFsCriacionais.md)
+    - [3.1.1 Builder](/PadroesDeProjeto/FactoryMethod/builder.md)
       - [3.1.1. Factory Method](/PadroesDeProjeto/FactoryMethod/factoryResume.md)
         - [3.1.1.1. Cards](/PadroesDeProjeto/FactoryMethod/cardFactory.md)
     - [3.2. Padrões de Projeto GoFs Estruturais](/docs/PadroesDeProjeto/3.2.GoFsEstruturais.md)

@@ -2,7 +2,13 @@
 
 ## Introdução
 
+O padrão de projeto Builder é utilizado para construir objetos complexos passo a passo, separando a lógica de construção da representação final do objeto. Em aplicações práticas, isso permite montar diferentes variações de um mesmo tipo de objeto utilizando o mesmo processo de construção.
 
+No exemplo que será apresentado, temos a criação de um formulário em React. A classe FormBuilder implementa os métodos responsáveis por adicionar diferentes tipos de campos (input de texto, e-mail, senha etc.) e atua como o construtor concreto (ConcreteBuilder). Cada um desses métodos retorna o próprio objeto para permitir o encadeamento de chamadas, o que é uma característica comum no padrão Builder.
+
+O componente CadastroPage assume o papel de diretor (Director), responsável por controlar a ordem e os tipos de campos adicionados ao formulário, mas sem lidar diretamente com os detalhes de como esses campos são construídos. O resultado da construção, ou seja, o array de elementos JSX que representam os campos do formulário, é o produto (Product).
+
+Esse padrão traz benefícios importantes, como organização, reutilização de lógica de construção e separação clara de responsabilidades, o que facilita a manutenção e a evolução do código — especialmente útil em formulários complexos ou com variações dinâmicas.
 
 ## Modelagem
 
