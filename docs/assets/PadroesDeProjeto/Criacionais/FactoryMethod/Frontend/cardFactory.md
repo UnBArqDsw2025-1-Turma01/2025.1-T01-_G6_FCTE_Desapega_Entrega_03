@@ -135,9 +135,9 @@ A fábrica `CardFactory` tem como objetivo guardar a lógica de criação de car
             <td>1.0</td>
             <td>Adicionando o porque usar o padrão, os códigos e imagem</td>
             <td><a href="https://github.com/Marianannn">Mariana Letícia</a> e <a href="https://github.com/ccarla">Carla A C Ribeiro</a></td>
-            <td>00/00/0000</td>
-            <td></td>
-            <td><a href="https://github.com/SEU_GIT]">SEU_NOME</a></td>
+            <td>06/02/2025</td>
+            <td>Revisado a introdução, documentação e se seguia os padrões da referência</td>
+            <td><a href="https://github.com/GabrielSMonteiro">Gabriel Monteiro</a></td>
         </tr>
     </table>
 </div>
