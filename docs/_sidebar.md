@@ -24,6 +24,9 @@
       - **Composite**
         - Frontend
           - [1ª Aplicação](./assets/PadroesDeProjeto/Estruturais/Composite/Frontend/viewAnuncios.md)
+      - **Adapter**
+        - Frontend
+          - [1ª Aplicação](./assets/PadroesDeProjeto/Estruturais/Adapter/Frontend/adapter.md)
     - 3.3. Padrões de Projeto GoFs Comportamentais
       - **Estrategy**
         - Frontend
