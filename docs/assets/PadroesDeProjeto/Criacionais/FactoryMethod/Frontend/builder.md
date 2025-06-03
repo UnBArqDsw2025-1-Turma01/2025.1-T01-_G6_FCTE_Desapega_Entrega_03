@@ -12,7 +12,7 @@ Esse padrão traz benefícios importantes, como organização, reutilização de
 
 ## Modelagem
 
-![modelagem da pagina de cadastro](./../../assets/builder.png)
+![modelagem da pagina de cadastro](./../../../../../assets/builder.png)
 
 <font size="3"><p style="text-align: center"><b>Figura 1: </b>Modelagem do Padrão criacional de projeto Builder aplicado na criação da página de cadastro.</p></font>
 <br>
