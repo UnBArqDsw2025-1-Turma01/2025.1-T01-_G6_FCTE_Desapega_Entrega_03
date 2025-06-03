@@ -19,7 +19,7 @@ Em nosso projeto, a classe `Anúncio` possui 3 classes filhas, podendo ser anún
 
 ## Implementação do padrão no Projeto
 
-![Padrão do Chain of Resposability no projeto](../../assets/diagrama-chain.jpg)
+![Padrão do Chain of Resposability no projeto](../../../../diagrama-chain.jpg)
 
 <p align="center"><em>Autores(as): <a href="https://github.com/arthur-suares">Arthur Suares</a> e <a href="https://github.com/Jagaima">Davi Nobre</a>, 2025.</em></p>
 
